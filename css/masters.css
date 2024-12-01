@@ -1,0 +1,98 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+
+##scrolly {
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
+
+article {
+  position: relative;
+  padding: 0;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+figure {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; /* Sticks to the top */
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  z-index: 0; /* Ensure it's above other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem; /* Adjust to increase internal padding */
+}
+
+figure img {
+  max-height: 50vh; /* Limits the height of the image within figure */
+  width: auto;
+  margin-bottom: 0.2rem; /* Space between the image and text */
+  margin-top: 2rem;
+}
+
+figure p {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Increase line spacing */
+}
+
+
+.step {
+  margin: 0 auto 2rem auto;
+  color: #fff;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step.is-active p {
+  background-color:#EEE2B5;
+  color: #3b3b3b;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #4c7756;
+}
+
+.mifigure {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100%;            /* Optional: ensures the container takes up full height */
+}
+
+.mifigure img {
+  max-width: 50%; /* Adjust as needed to control the size */
+  height: auto;   /* Maintains the aspect ratio */
+}
